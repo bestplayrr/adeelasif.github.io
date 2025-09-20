@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Structured Page – INFT1206</title>
+  <meta name="author" content="Adeel Asif">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font: 1rem / 1.6 system-ui; margin: 0; }
+    header, nav, main, aside, footer { padding: 1rem; }
+    header { background: #f2f2f2; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; }
+    nav a { text-decoration: none; }
+    main { display: grid; grid-template-columns: 1fr 320px; gap: 1rem; align-items: start; }
+    article > header { margin-bottom: .5rem; }
+    figure { margin: 0; }
+    img { max-width: 100%; height: auto; display: block; }
+    footer { background: #f9f9f9; margin-top: 1rem; }
+    @media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<!--
+Name: Adeel Asif
+File: page.html
+Date: 10 September 2025
+Brief: Semantic “Structuring a page of content” solution.
+INFT1206 – Web Development Fundamentals
+-->
+
+<header>
+  <h1>Example News Site</h1>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="page.html" aria-current="page">Home</a></li>
+      <li><a href="letter.html">Letter</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <header>
+      <h2>Semantic HTML Overview</h2>
+      <p>Posted <time datetime="2025-09-10">September 10, 2025</time></p>
+    </header>
+
+    <section>
+      <h3>Why semantics?</h3>
+      <p>Semantic elements describe meaning and structure, improving accessibility and SEO.</p>
+      <ul>
+        <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code></li>
+        <li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code></li>
+        <li><code>&lt;footer&gt;</code>, headings <code>&lt;h1..h6&gt;</code>, and lists</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Example figure</h3>
+      <figure>
+        <img src="https://via.placeholder.com/800x260" alt="Abstract banner placeholder">
+        <figcaption>A simple illustrative banner used within an article.</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <p>Tags: <a href="#">HTML</a> · <a href="#">Semantics</a></p>
+    </footer>
+  </article>
+
+  <aside aria-label="Sidebar">
+    <h2>Sidebar</h2>
+    <p>Use asides for related links, summaries, or short callouts.</p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener">MDN: Learn HTML</a></li>
+      <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2025 Example Site</p>
+</footer>
+</body>
+</html>
